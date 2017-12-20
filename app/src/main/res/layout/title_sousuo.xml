@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/saoyisao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/sao_kind"
+                android:id="@+id/iv_sao"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="扫阿扫" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sousuo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/a_4"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/root"
+                />
+            <EditText
+                android:layout_width="match_parent"
+
+                android:paddingLeft="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="9"
+                android:id="@+id/et_sousuo"
+                android:cursorVisible="false"
+                android:background="@drawable/sousuo_shape"
+                android:hint="笔记本电脑" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/xiaoxi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/order_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="消息" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

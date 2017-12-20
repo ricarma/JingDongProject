@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.bwie.apple.jingdongproject">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".net.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/jd_buy_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.ShowActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity
+            android:name=".view.ZhuceActivity"
+            android:label="@string/title_activity_zhuce"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.SearchActivity" />
+        <activity android:name=".view.SearchListActivity" />
+        <activity android:name=".view.XiangQingActivity" />
+        <activity android:name=".view.ShowSonActivity" />
+        <!-- 注册SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105602574" /> <!-- 开放平台获取的APPID -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".view.JieSuanActivity" />
+        <activity android:name=".view.AddressActivity"></activity>
+    </application>
+
+</manifest>
