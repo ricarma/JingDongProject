@@ -23,6 +23,8 @@ public class ZhuceActivity extends AppCompatActivity implements RegView{
     private EditText et1,et2;
     private String mobile,pass;
     private ImageView iv;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
