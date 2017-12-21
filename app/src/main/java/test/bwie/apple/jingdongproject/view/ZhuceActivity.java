@@ -39,6 +39,7 @@ public class ZhuceActivity extends AppCompatActivity implements RegView{
         });
         bt = findViewById(R.id.bt_zhuce);
         et1 = findViewById(R.id.et_name);
+
         et2 = findViewById(R.id.et_password);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
